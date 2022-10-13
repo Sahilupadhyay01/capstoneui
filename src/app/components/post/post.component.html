@@ -1,0 +1,10 @@
+<div class="container" *ngIf="post">
+    <div class="card" style="max-width:500px;margin:0 auto;">
+        <img src="https://www.vermontjoblink.com/assets/public_jobseeker-5a6d5db0b4d0ed8ab6afa57d37d459311c0c33fe3431c54eab1cc1cef4df87dd.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">{{post.jobTitle}}</h1>
+         <article class="card-text" [innerHTML]="post.jobBrief">
+         </article>
+        </div>
+      </div>
+</div>
